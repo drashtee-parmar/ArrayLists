@@ -17,6 +17,8 @@ public class MoreLists {
 
         ArrayList<String> groceries = new ArrayList<>(list);
 
+        /****** Adding ******/
+
         groceries.add("yogurt");
         System.out.println(groceries);
 
@@ -30,15 +32,20 @@ public class MoreLists {
 
         System.out.println("Third items = " + groceries.get(2));
 
+        /****** Contains ******/
+
 //        Searching item in an list
         if (groceries.contains("mustard")) {
             System.out.println("List contains mustard");
         }
 
         groceries.add("yogurt");
+//        Indexof - for first match element
         System.out.println("first = " + groceries.indexOf("yogurt"));
+//        lastIndexOf - last element of index
         System.out.println("last = " + groceries.lastIndexOf("yogurt"));
 
+        /****** Removing ******/
 //        It only removes the single element
         System.out.println(groceries);
         groceries.remove(1);
@@ -63,6 +70,7 @@ public class MoreLists {
         groceries.addAll(List.of("apple", "milk", "mustard", "cheese"));
         groceries.addAll(Arrays.asList("eggs", "mustard", "pickles", "ham"));
 
+        /****** Sorting ******/
         System.out.println(groceries);
 //        Sort the groceries using comparator that compare to one another
         System.out.println("_".repeat(60));
